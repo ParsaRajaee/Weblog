@@ -1,0 +1,14 @@
+{{ define "main" }}
+  {{ .Content }}
+
+  <!-- Normal homepage posts list -->
+  {{ range .Paginator.Pages }}
+    <article class="post-entry">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Summary }}</p>
+    </article>
+  {{ end }}
+
+  <!-- "About Me" button -->
+  <a href="/about/" class="about-button">درباره من</a>
+{{ end }}
