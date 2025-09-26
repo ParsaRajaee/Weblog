@@ -156,19 +156,6 @@ body {
   color: #007acc;
 }
 /* Decorative right sidebar */
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 250px;                /* default width */
-  height: 100vh;
-  background: url("/images/flow-right.png") no-repeat top right;
-  background-size: cover;
-  z-index: -1;
-  pointer-events: none;
-  transition: filter 0.3s ease;
-}
 
 /* Dark mode inversion */
 body.dark::after {
